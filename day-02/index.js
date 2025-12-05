@@ -14,7 +14,6 @@ const ranges = parseInput(input);
 const invalidIds = [];
 
 for (const [start, end] of ranges) {
-  //console.log('Analysing range ' + start + ' to ' + end);
   let rangeDuplicateCounter = 0;
   for (let id = start; id <= end; id++) {
     const idString = id.toString();
